@@ -114,33 +114,33 @@
 
 /* Dark theme - Enabled buttons (red border, red arrow) */
 .pg-dark .pg-btn.pg-active {
-  background: transparent;
-  border: 1px solid #E71C03;
-  color: #E71C03;
+  background: transparent !important;
+  border: 1px solid #E71C03 !important;
+  color: #E71C03 !important;
 }
 
 .pg-dark .pg-btn.pg-active .pg-icon {
-  color: #E71C03;
+  filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(2000%) hue-rotate(350deg) brightness(90%) contrast(120%) !important;
 }
 
 .pg-dark .pg-btn.pg-active:hover:not(:disabled) {
-  background: #E71C03;
-  color: #fff;
+  background: #E71C03 !important;
+  color: #fff !important;
 }
 
 .pg-dark .pg-btn.pg-active:hover:not(:disabled) .pg-icon {
-  color: #fff;
+  filter: brightness(0) invert(1) !important;
 }
 
 /* Dark theme - Disabled buttons (gray background, white arrow) */
 .pg-dark .pg-btn.pg-disabled {
-  background: #4A4D55;
-  border: 1px solid #4A4D55;
-  color: #fff;
+  background: #4A4D55 !important;
+  border: 1px solid #4A4D55 !important;
+  color: #fff !important;
 }
 
 .pg-dark .pg-btn.pg-disabled .pg-icon {
-  color: #fff;
+  filter: brightness(0) invert(1) !important;
 }
 
 /* Pagination page styles */
