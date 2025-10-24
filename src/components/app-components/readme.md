@@ -38,6 +38,7 @@
 - [spinf-alert-page](../component-library/alert)
 - [spinf-button-page](../component-library/button)
 - [spinf-pagination-page](../component-library/pagination)
+- [spinf-dropdown-page](../component-library/dropdown)
 - [spinf-segmented-buttons-page](../component-library/segmented-buttons)
 
 ### Graph
@@ -47,12 +48,15 @@ graph TD;
   app-components --> spinf-alert-page
   app-components --> spinf-button-page
   app-components --> spinf-pagination-page
+  app-components --> spinf-dropdown-page
   app-components --> spinf-segmented-buttons-page
   spinf-accordion-page --> spinf-accordion
   spinf-accordion-page --> spinf-accordion-item
   spinf-alert-page --> spinf-alert
   spinf-button-page --> spinf-button
   spinf-pagination-page --> spinf-pagination
+  spinf-dropdown-page --> spinf-dropdown
+  spinf-dropdown-page --> spinf-dropdown-option
   spinf-segmented-buttons-page --> spinf-segmented-buttons
   app-root --> app-components
   style app-components fill:#f9f,stroke:#333,stroke-width:4px
