@@ -1,0 +1,141 @@
+.accordion {
+  width: 100%;
+}
+
+.accordion__item {
+  background: #F5F5F5;
+  border-radius: 40px;
+  padding: 8px 16px;
+  margin: 12px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  transition: background .2s, border-color .2s;
+  cursor: pointer;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.accordion__item:hover {
+  background: #FFD300;
+  border-color: #FFD300;
+}
+
+.accordion__item.open {
+  background: #fff;
+  border: 1px solid #E5E5E5;
+}
+
+.accordion__label {
+  font-weight: 600;
+  color: #1D1C20;
+}
+
+.accordion__icon {
+  width: 32px;
+  height: 32px;
+}
+
+.accordion__panel {
+  display: none;
+  padding: 12px 16px 0 16px;
+  color: #1D1C20;
+}
+
+.accordion__item.open + .accordion__panel {
+  display: block;
+}
+
+.accordion__chip {
+  background: #F5F5F5;
+  border-radius: 40px;
+  padding: 8px 16px;
+  display: inline-block;
+  margin: 8px 8px 0 0;
+  color: #1D1C20;
+  transition: background .2s;
+  cursor: pointer;
+}
+
+.accordion__chip:hover {
+  background: #FFD300;
+}
+
+/* Accordion page styles */
+.accordion-page {
+  padding-top: 2.5rem;
+  padding-left: 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.accordion-demo {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: #fff;
+}
+
+.accordion-demo h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 1.5rem 0;
+}
+
+.accordion-page p {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  margin: 2rem 0;
+}
+
+.accordion-specs {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+}
+
+.accordion-specs h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 1.5rem 0;
+}
+
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.spec-item h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 1rem 0;
+}
+
+.spec-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.spec-item li {
+  padding: 0.5rem 0;
+  color: #4b5563;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.spec-item li:last-child {
+  border-bottom: none;
+}

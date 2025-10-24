@@ -1,0 +1,26 @@
+:host {
+    display: block;
+    height: 100vh;
+    background: #fff;
+  }
+  
+  .layout {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .main-area {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    height: calc(100vh - (56px + 40px));
+    width: 100%;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .content {
+    background: #fff;
+    overflow-y: auto;
+  }  

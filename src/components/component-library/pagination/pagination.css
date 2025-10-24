@@ -1,0 +1,256 @@
+:host {
+  display: inline-block;
+  font-family: 'Funnel Sans', sans-serif;
+}
+
+/* Icon styles */
+.pg-icon {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Funnel Sans', sans-serif;
+}
+
+.pg-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-family: 'Funnel Sans', sans-serif;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  width: 40px;
+  height: 40px;
+}
+
+.pg-btn:disabled {
+  cursor: not-allowed;
+}
+
+.pg-btn:not(:disabled):hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.pg-btn:not(:disabled):active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Active button (red background) */
+.pg-active {
+  background: #E71C03;
+  color: #fff;
+}
+
+.pg-active:hover:not(:disabled) {
+  background: #E71C03;
+}
+
+/* Disabled button (light theme) */
+.pg-disabled {
+  background: #E5E5E5;
+  color: #999;
+}
+
+.pg-disabled .pg-icon {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+.pg-number {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1B1C20;
+  padding: 0 8px;
+  min-width: 60px;
+  text-align: center;
+}
+
+/* Sizes */
+.pg-s .pg-btn {
+  width: 32px;
+  height: 32px;
+  font-size: 12px;
+}
+
+.pg-s .pg-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.pg-s .pg-number {
+  font-size: 12px;
+  min-width: 50px;
+}
+
+.pg-m .pg-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+}
+
+.pg-m .pg-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.pg-m .pg-number {
+  font-size: 14px;
+  min-width: 60px;
+}
+
+/* Dark theme */
+.pg-dark .pg-number {
+  color: #ffffff;
+}
+
+/* Dark theme - Enabled buttons (red border, red arrow) */
+.pg-dark .pg-btn.pg-active {
+  background: transparent;
+  border: 1px solid #E71C03;
+  color: #E71C03;
+}
+
+.pg-dark .pg-btn.pg-active .pg-icon {
+  color: #E71C03;
+}
+
+.pg-dark .pg-btn.pg-active:hover:not(:disabled) {
+  background: #E71C03;
+  color: #fff;
+}
+
+.pg-dark .pg-btn.pg-active:hover:not(:disabled) .pg-icon {
+  color: #fff;
+}
+
+/* Dark theme - Disabled buttons (gray background, white arrow) */
+.pg-dark .pg-btn.pg-disabled {
+  background: #4A4D55;
+  border: 1px solid #4A4D55;
+  color: #fff;
+}
+
+.pg-dark .pg-btn.pg-disabled .pg-icon {
+  color: #fff;
+}
+
+/* Pagination page styles */
+.pagination-page {
+  padding-top: 2.5rem;
+  padding-left: 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.pagination-page h1 {
+  font-family: 'Delight', sans-serif;
+}
+
+.pagination-page h2 {
+  font-family: 'Delight', sans-serif;
+}
+
+.pagination-page p {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  margin: 2rem 0;
+}
+
+.pagination-demo {
+  margin: 3rem 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.pagination-section {
+  padding: 2rem;
+  background: transparent;
+  border: none;
+}
+
+.pagination-section.dark-theme {
+  background: #1B1C20;
+  color: #fff;
+  border-radius: 0.75rem;
+}
+
+.pagination-section h2 {
+  font-family: 'Delight', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1B1C20;
+  margin: 0 0 1rem 0;
+}
+
+.pagination-section.dark-theme h2 {
+  color: #fff;
+}
+
+.pagination-section h3 {
+  font-family: 'Delight', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1B1C20;
+  margin: 0 0 1rem 0;
+}
+
+.pagination-section.dark-theme h3 {
+  color: #fff;
+}
+
+.pagination-row {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Pagination variants layout */
+.pagination-variants {
+  display: flex;
+  gap: 2rem;
+  background: #F5F5F5;
+  padding: 2rem;
+  border-radius: 8px;
+  margin: 2rem 0;
+}
+
+.pagination-variant {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.pagination-variant h3 {
+  font-family: 'Delight', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1B1C20;
+  margin: 0;
+  text-align: center;
+}
+
+/* Focus states for accessibility */
+.pg-btn:focus {
+  outline: 2px solid #FFD300;
+  outline-offset: 2px;
+}.pg-btn:focus:not(:focus-visible) {
+  outline: none;
+}
+
+

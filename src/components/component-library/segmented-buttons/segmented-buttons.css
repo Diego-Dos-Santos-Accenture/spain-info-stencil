@@ -1,0 +1,138 @@
+:host {
+  display: inline-block;
+  font-family: 'Funnel Sans', sans-serif;
+}
+
+.segmented-buttons {
+  display: flex;
+  border: 2px solid #1D1C20;
+  border-radius: 999px;
+  height: 44px;
+  background: #fff;
+  font-family: 'Funnel Sans', sans-serif;
+  gap: 4px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.sb-option {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  background: transparent;
+  color: #1D1C20;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1 1 0;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-family: 'Funnel Sans', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  white-space: nowrap;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
+
+.sb-option:hover:not(.sb-active) {
+  background: #F8F8F7;
+}
+
+.sb-option:active:not(.sb-active) {
+  background: #E5E5E5;
+  transform: translateY(1px);
+}
+
+.sb-active {
+  background: #FFD300 !important;
+  color: #1B1C20;
+}
+
+.sb-active:hover {
+  background: #E6BE00 !important;
+}
+
+.sb-text {
+  font-weight: 600;
+  font-size: inherit;
+}
+
+.sb-icon {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+}
+
+/* Focus states for accessibility */
+.sb-option:focus-visible {
+  outline: 3px solid #FFD300;
+  outline-offset: 2px;
+  border-radius: 999px;
+}
+
+/* Disabled state */
+.sb-option:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sb-option:disabled:hover {
+  background: #fff;
+  transform: none;
+}
+
+/* Segmented Buttons page styles */
+.segmented-buttons-page {
+  padding-top: 2.5rem;
+  padding-left: 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.segmented-buttons-page h1 {
+  font-family: 'Delight', sans-serif;
+}
+
+.segmented-buttons-page h2 {
+  font-family: 'Delight', sans-serif;
+}
+
+.segmented-buttons-page p {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  margin: 2rem 0;
+}
+
+.segmented-buttons-demo {
+  margin: 3rem 0;
+  padding: 0;
+  background: transparent;
+  border: none;
+}
+
+.segmented-buttons-section {
+  margin-bottom: 3rem;
+  padding: 2rem;
+  background: transparent;
+  border: none;
+}
+
+.segmented-buttons-section h3 {
+  font-family: 'Delight', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1B1C20;
+  margin: 0 0 1rem 0;
+}

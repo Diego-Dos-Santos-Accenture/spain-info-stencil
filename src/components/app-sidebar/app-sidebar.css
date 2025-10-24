@@ -1,0 +1,103 @@
+:host {
+  display: block;
+  height: 100%;
+  font-family: 'Funnel Sans', sans-serif;
+}
+
+.sidebar {
+  background: white;
+  border-right: 1px solid #e5e7eb;
+  height: 100%;
+  padding: 1.5rem;
+}
+
+/* ====== BOTÃO PRINCIPAL (Foundations) ====== */
+.menu__section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 1.25rem;
+  background: #F8F8F7;
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1b1c20;
+  transition: background 0.2s ease;
+}
+
+.menu__section:hover {
+  background: #f3f3f3;
+}
+
+.icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+
+.icon-svg {
+  width: 24px;
+  height: 24px;
+  color: #1b1c20;
+  transition: color 0.2s ease;
+}
+
+.menu__section:hover .icon-svg {
+  color: #000;
+}
+
+.menu__section.expanded .icon-svg {
+  color: #000;
+}
+
+
+.menu__title {
+  font-weight: 700;
+}
+
+/* ====== SUBMENU ====== */
+.submenu {
+  list-style: none;
+  margin: 1.25rem 0 0 0;
+  padding-left: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.submenu a {
+  text-decoration: none;
+  color: #1b1c20;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.5rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+/* Hover gris suave */
+.submenu a:hover {
+  background: #F8F8F7;
+}
+
+/* Activo normal */
+.submenu a.active {
+  color: #B91602;
+  font-weight: 600;
+}
+
+/* Activo destacado (como "Primitivos") */
+.submenu a.active-strong {
+  color: #B91602;
+  font-weight: 700;
+}
+
+/* Espaciado geral */
+.submenu li {
+  margin: 0;
+}

@@ -1,0 +1,362 @@
+:host {
+  display: inline-block;
+  font-family: 'Funnel Sans', sans-serif;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border-radius: 24px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-sizing: border-box;
+}
+
+/* Primary Button */
+.btn-primary {
+  background: #FFD300;
+  color: #1B1C20;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #E6BE00;
+}
+
+.btn-primary:disabled {
+  background: #E5E5E5;
+  color: #999;
+  cursor: not-allowed;
+}
+
+/* Secondary Button */
+.btn-secondary {
+  background: transparent;
+  color: #1B1C20;
+  border: 1px solid #1B1C20;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: transparent;
+  color: #1B1C20;
+  border: 1px solid #1B1C20;
+  box-shadow: 0 0 0 2px #FFD300;
+}
+
+.btn-secondary:active:not(:disabled) {
+  background: #FFD300;
+  color: #1B1C20;
+  border-color: #FFD300;
+}
+
+.btn-secondary:disabled {
+  background: transparent;
+  color: #999;
+  border-color: #E5E5E5;
+  cursor: not-allowed;
+}
+
+/* Tertiary Button */
+.btn-tertiary {
+  background: transparent;
+  color: #1B1C20;
+  text-decoration: none;
+  border: none;
+}
+
+.btn-tertiary:hover:not(:disabled) {
+  background: #FFD300;
+  color: #1B1C20;
+  text-decoration: none;
+}
+
+.btn-tertiary:active:not(:disabled) {
+  background: #FFD300;
+  color: #1B1C20;
+  text-decoration: none;
+}
+
+.btn-tertiary:disabled {
+  color: #999;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+/* Link Button */
+.btn-link {
+  background: transparent;
+  color: #B91602;
+  text-decoration: underline;
+  padding: 8px 0;
+  border: none;
+}
+
+.btn-link .btn-icon {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(2000%) hue-rotate(350deg) brightness(90%) contrast(120%);
+}
+
+.btn-link:hover:not(:disabled) {
+  color: #EC4935;
+  text-decoration: underline;
+}
+
+.btn-link:hover:not(:disabled) .btn-icon {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(100%) saturate(2000%) hue-rotate(350deg) brightness(110%) contrast(120%);
+}
+
+.btn-link:active:not(:disabled) {
+  color: #EC4935;
+  text-decoration: underline;
+}
+
+.btn-link:active:not(:disabled) .btn-icon {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(100%) saturate(2000%) hue-rotate(350deg) brightness(110%) contrast(120%);
+}
+
+.btn-link:disabled {
+  color: #999;
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+/* Sizes */
+.btn-l {
+  padding: 16px 32px;
+  font-size: 16px;
+}
+
+.btn-m {
+  padding: 12px 24px;
+  font-size: 14px;
+}
+
+.btn-xs {
+  padding: 8px 16px;
+  font-size: 12px;
+}
+
+/* Link button sizes */
+.btn-link.btn-l {
+  padding: 12px 0;
+  font-size: 16px;
+}
+
+.btn-link.btn-m {
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.btn-link.btn-xs {
+  padding: 6px 0;
+  font-size: 12px;
+}
+
+/* Icon */
+.btn-icon {
+  width: 16px;
+  height: 16px;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background: #1B1C20;
+  color: #fff;
+}
+
+.dark-theme .btn-primary {
+  background: #FFD300;
+  color: #1B1C20;
+}
+
+.dark-theme .btn-secondary {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+.dark-theme .btn-secondary .btn-icon {
+  filter: brightness(0) invert(1) !important;
+  -webkit-filter: brightness(0) invert(1) !important;
+}
+
+.dark-theme .btn-secondary:hover:not(:disabled) {
+  background: transparent;
+  color: #FFD300;
+  border: 1px solid #FFD300;
+}
+
+.dark-theme .btn-secondary:hover:not(:disabled) .btn-icon {
+  filter: brightness(0) saturate(100%) invert(85%) sepia(90%) saturate(1500%) hue-rotate(0deg) brightness(105%) contrast(102%) !important;
+  -webkit-filter: brightness(0) saturate(100%) invert(85%) sepia(90%) saturate(1500%) hue-rotate(0deg) brightness(105%) contrast(102%) !important;
+}
+
+.dark-theme .btn-secondary:active:not(:disabled) {
+  background: #FFD300;
+  color: #1B1C20;
+  border-color: #FFD300;
+}
+
+.dark-theme .btn-secondary:active:not(:disabled) .btn-icon {
+  filter: brightness(0) saturate(100%) invert(10%) sepia(10%) saturate(0%) hue-rotate(0deg) brightness(10%) contrast(100%);
+}
+
+.dark-theme .btn-tertiary {
+  background: transparent;
+  color: #fff;
+  text-decoration: none;
+}
+
+.dark-theme .btn-tertiary .btn-icon {
+  filter: brightness(0) invert(1);
+}
+
+.dark-theme .btn-tertiary:hover:not(:disabled) {
+  background: #FFD300;
+  color: #1B1C20;
+  text-decoration: none;
+}
+
+.dark-theme .btn-tertiary:hover:not(:disabled) .btn-icon {
+  filter: brightness(0) saturate(100%) invert(10%) sepia(10%) saturate(0%) hue-rotate(0deg) brightness(10%) contrast(100%);
+}
+
+.dark-theme .btn-tertiary:active:not(:disabled) {
+  background: #FFD300;
+  color: #1B1C20;
+  text-decoration: none;
+}
+
+.dark-theme .btn-tertiary:active:not(:disabled) .btn-icon {
+  filter: brightness(0) saturate(100%) invert(10%) sepia(10%) saturate(0%) hue-rotate(0deg) brightness(10%) contrast(100%);
+}
+
+.dark-theme .btn-link {
+  background: transparent;
+  color: #B91602;
+  text-decoration: underline;
+}
+
+.dark-theme .btn-link .btn-icon {
+  filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(2000%) hue-rotate(350deg) brightness(90%) contrast(120%);
+}
+
+.dark-theme .btn-link:hover:not(:disabled) {
+  color: #EC4935;
+  text-decoration: underline;
+}
+
+.dark-theme .btn-link:hover:not(:disabled) .btn-icon {
+  filter: brightness(0) saturate(100%) invert(30%) sepia(100%) saturate(2000%) hue-rotate(350deg) brightness(110%) contrast(120%);
+}
+
+/* Button page styles */
+.button-page {
+  padding-top: 2.5rem;
+  padding-left: 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.button-page h1 {
+  font-family: 'Delight', sans-serif;
+}
+
+.button-page h2 {
+  font-family: 'Delight', sans-serif;
+}
+
+.button-page p {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  margin: 2rem 0;
+}
+
+.button-demo {
+  margin: 3rem 0;
+  padding: 2rem;
+  background: #fff;
+}
+
+.button-demo h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 2rem 0 1rem 0;
+}
+
+.button-demo h2:first-child {
+  margin-top: 0;
+}
+
+.button-section {
+  margin-bottom: 2rem;
+}
+
+.button-section h3 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 1rem 0;
+}
+
+.button-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.button-section.dark-theme {
+  background: #1B1C20;
+  color: #fff;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+.button-section.dark-theme h3 {
+  color: #fff;
+}
+
+.button-feedback {
+  background: #f0f9ff;
+  border: 1px solid #0ea5e9;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.button-feedback p {
+  margin: 0;
+  color: #0369a1;
+  font-weight: 500;
+}
+
+.button-variant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.button-variant h4 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.dark-theme .button-variant h4 {
+  color: #fff;
+}
+

@@ -1,0 +1,106 @@
+/* ============================================
+   🇪🇸 Spain.Info Design Tokens
+   ============================================ */
+
+/* ---------- 🔹 Colores principales ---------- */
+:root {
+  /* Identidad visual */
+  --spain-info-color-primary-900: #00335e;
+  --spain-info-color-primary-800: #003f7a;
+  --spain-info-color-primary-700: #004b9a; /* azul navbar */
+  --spain-info-color-primary-600: #0056b1;
+  --spain-info-color-primary-500: #0062c9;
+  --spain-info-color-primary-400: #1e7de0;
+  --spain-info-color-primary-300: #4aa2f0;
+  --spain-info-color-primary-200: #8cc7f8;
+  --spain-info-color-primary-100: #d2e9fb;
+
+  /* Secundarios */
+  --spain-info-color-secondary-700: #ffd300; /* amarillo institucional */
+  --spain-info-color-secondary-600: #e6be00;
+  --spain-info-color-secondary-500: #ccb000;
+
+  /* Neutros */
+  --spain-info-color-neutral-900: #1b1c20;
+  --spain-info-color-neutral-800: #3a3b3f;
+  --spain-info-color-neutral-700: #5e6066;
+  --spain-info-color-neutral-600: #7f8189;
+  --spain-info-color-neutral-500: #a0a2a9;
+  --spain-info-color-neutral-400: #c2c4cb;
+  --spain-info-color-neutral-300: #dcdfe4;
+  --spain-info-color-neutral-200: #e9ebf0;
+  --spain-info-color-neutral-100: #f7f9fb;
+
+  /* Estado */
+  --spain-info-color-success: #00873d;
+  --spain-info-color-warning: #f4b000;
+  --spain-info-color-error: #c72c2c;
+  --spain-info-color-info: #0071ce;
+
+  /* Fondo */
+  --spain-info-color-surface-1: #ffffff;
+  --spain-info-color-surface-2: #f9fafc;
+  --spain-info-color-border: #e0e4e8;
+}
+
+/* ---------- 🔤 Tipografía ---------- */
+:root {
+  --spain-info-font-family-sans: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  --spain-info-font-family-mono: 'Roboto Mono', monospace;
+
+  /* Escala tipográfica */
+  --spain-info-font-size-xs: 12px;
+  --spain-info-font-size-sm: 14px;
+  --spain-info-font-size-md: 16px;
+  --spain-info-font-size-lg: 18px;
+  --spain-info-font-size-xl: 24px;
+  --spain-info-font-size-xxl: 32px;
+
+  /* Pesos */
+  --spain-info-font-weight-regular: 400;
+  --spain-info-font-weight-medium: 500;
+  --spain-info-font-weight-semibold: 600;
+  --spain-info-font-weight-bold: 700;
+
+  /* Altura de línea */
+  --spain-info-line-height-tight: 1.2;
+  --spain-info-line-height-normal: 1.5;
+  --spain-info-line-height-relaxed: 1.7;
+}
+
+/* ---------- 📏 Espaciado ---------- */
+:root {
+  --spain-info-spacing-2xs: 2px;
+  --spain-info-spacing-xs: 4px;
+  --spain-info-spacing-sm: 8px;
+  --spain-info-spacing-md: 12px;
+  --spain-info-spacing-lg: 16px;
+  --spain-info-spacing-xl: 24px;
+  --spain-info-spacing-2xl: 32px;
+  --spain-info-spacing-3xl: 48px;
+}
+
+/* ---------- 🧱 Bordes y radio ---------- */
+:root {
+  --spain-info-radius-xs: 2px;
+  --spain-info-radius-sm: 4px;
+  --spain-info-radius-md: 6px;
+  --spain-info-radius-lg: 8px;
+  --spain-info-radius-xl: 12px;
+  --spain-info-radius-pill: 9999px;
+}
+
+/* ---------- 🌫️ Sombras ---------- */
+:root {
+  --spain-info-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.08);
+  --spain-info-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --spain-info-shadow-lg: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- 🖋️ Layout ---------- */
+:root {
+  --spain-info-max-width-content: 1280px;
+  --spain-info-sidebar-width: 260px;
+  --spain-info-header-height: 56px;
+  --spain-info-navbar-height: 40px;
+}
