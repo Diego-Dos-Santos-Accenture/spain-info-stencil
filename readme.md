@@ -1,92 +1,78 @@
-# Spain Info Stencil Component Library
+# Spain Info – Biblioteca de Componentes
 
-A comprehensive StencilJS component library for the Spain Info project, featuring modern UI components with dark theme support.
+Una completa biblioteca de componentes desarrollada con StencilJS para el proyecto Spain Info, que incluye una colección moderna de componentes de interfaz con soporte para tema oscuro.
 
-## 🚀 Features
+---
 
-- **Modern Components**: Accordion, Alert, Button, Pagination, Segmented Buttons
-- **Dark Theme Support**: Full dark theme implementation for all components
-- **TypeScript**: Fully typed components with excellent developer experience
-- **Accessibility**: ARIA compliant components
-- **Responsive Design**: Mobile-first approach with responsive breakpoints
+## 🚀 Características
 
-## 📦 Components
+✨ **Componentes Modernos** – Acordeón, Alerta, Botón, Paginación, Botones Segmentados  
+🌙 **Soporte de Tema Oscuro** – Implementación completa del modo oscuro en todos los componentes  
+🧩 **Escrita en TypeScript** – Componentes totalmente tipados para un desarrollo más robusto  
+♿ **Accesibilidad (ARIA)** – Cumple con los estándares de accesibilidad web  
+📱 **Diseño Responsive** – Enfoque *mobile-first* con puntos de ruptura fluidos  
 
-### Accordion
-Expandable content sections with smooth animations and keyboard navigation.
+---
 
-### Alert
-Contextual feedback messages with multiple variants (brand, normal, info, warning, error, success).
+## 📦 Algunos Componentes Incluidos
 
-### Button
-Interactive buttons with multiple variants (primary, secondary, tertiary, link) and sizes.
+| Componente | Descripción |
+|-------------|-------------|
+| **Acordeón** | Secciones expandibles con animaciones suaves y navegación por teclado |
+| **Alerta** | Mensajes de retroalimentación contextual (marca, info, éxito, error, aviso) |
+| **Botón** | Múltiples variantes (primario, secundario, terciario, enlace) y tamaños |
+| **Paginación** | Navegación adaptable para conjuntos grandes de datos |
+| **Botones Segmentados** | Selección de opciones exclusivas con estilo moderno en forma de pastilla |
 
-### Pagination
-Navigation component for large datasets with customizable page controls.
+---
 
-### Segmented Buttons
-Mutually exclusive option selection with modern pill-style design.
+## 🛠️ Desarrollo
 
-## 🛠️ Development
+### 🔧 Requisitos previos
+- Node.js **16+**
+- npm o yarn
 
-### Prerequisites
-- Node.js 16+ 
-- npm or yarn
+### ⚙️ Instalación
 
-### Installation
-```bash
 npm install
-```
 
-### Development Server
-```bash
+🧑‍💻 Servidor de desarrollo
+
+bash
+Copy code
 npm start
-```
 
-### Build
-```bash
+🏗️ Compilación de producción
+
+bash
+Copy code
 npm run build
-```
 
-### Storybook
-```bash
-cd storybook
-npm install
-npm run storybook
-```
+🎨 Sistema de Diseño
+Esta biblioteca sigue un sistema de diseño coherente y escalable:
 
-## 🎨 Design System
+🎨 Colores: Tokens de color primario, secundario y semántico
 
-The component library follows a consistent design system with:
-- **Colors**: Primary, secondary, and semantic color tokens
-- **Typography**: Nunito Sans font family with consistent sizing
-- **Spacing**: 8px base unit system
-- **Border Radius**: Consistent rounded corners
-- **Shadows**: Subtle elevation system
+✍️ Tipografía: Fuente Nunito Sans con escalas consistentes
 
-## 🌙 Dark Theme
+📏 Espaciado: Sistema basado en unidades de 8 px
 
-All components support dark theme with:
-- Automatic color inversion
-- Proper contrast ratios
-- Icon color adjustments
-- Consistent visual hierarchy
+⭕ Radio de borde: Esquinas redondeadas uniformes
 
-## 📱 Responsive Design
+🌫️ Sombras: Jerarquía visual mediante un sistema de elevación sutil
 
-Components are built mobile-first with:
-- Flexible layouts
-- Touch-friendly interactions
-- Optimized for all screen sizes
 
-## 🤝 Contributing
+🌙 Tema Oscuro
+Todos los componentes incluyen soporte para tema oscuro con:
 
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
+Inversión automática de colores
 
-## 📄 License
+Contrastes adecuados para la legibilidad
 
-This project is licensed under the MIT License.
+Iconografía adaptada al fondo
+
+Mantenimiento de jerarquía visual coherente
+
+📄 Licencia
+Este proyecto está licenciado bajo la MIT License.
+Consulta el archivo LICENSE para más información.
