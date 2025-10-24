@@ -48,6 +48,14 @@ export class AppComponents {
       );
     }
 
+    if (this.currentSubPage === 'dropdown') {
+      return (
+        <Host>
+          <spinf-dropdown-page></spinf-dropdown-page>
+        </Host>
+      );
+    }
+
     if (this.currentSubPage === 'segmented-buttons') {
       return (
         <Host>
@@ -72,6 +80,7 @@ export class AppComponents {
               { name: 'Acordeón', image: getAssetPath('MASTER_ICON'), id: 'acordeon' },
               { name: 'Alert', image: getAssetPath('MASTER_ICON'), id: 'alert' },
               { name: 'Button', image: getAssetPath('MASTER_ICON'), id: 'button' },
+              { name: 'Dropdown', image: getAssetPath('MASTER_ICON'), id: 'dropdown' },
               { name: 'Pagination', image: getAssetPath('PAGINATION'), id: 'pagination' },
               { name: 'Segmented Buttons', image: getAssetPath('MASTER_ICON'), id: 'segmented-buttons' },
             ].map((component) => (

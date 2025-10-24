@@ -53,6 +53,7 @@ export class AppSidebarComponent {
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('button'); }} class={this.currentSubPage === 'button' ? 'active' : ''}>Button</a></li>
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('pagination'); }} class={this.currentSubPage === 'pagination' ? 'active' : ''}>Pagination</a></li>
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('segmented-buttons'); }} class={this.currentSubPage === 'segmented-buttons' ? 'active' : ''}>Segmented Buttons</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('dropdown'); }} class={this.currentSubPage === 'dropdown' ? 'active' : ''}>Dropdown</a></li>
                               </ul>
                             )}
               </>

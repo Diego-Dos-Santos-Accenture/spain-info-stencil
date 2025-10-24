@@ -29,12 +29,15 @@ graph TD;
   app-components --> spinf-alert-page
   app-components --> spinf-button-page
   app-components --> spinf-pagination-page
+  app-components --> spinf-dropdown-page
   app-components --> spinf-segmented-buttons-page
   spinf-accordion-page --> spinf-accordion
   spinf-accordion-page --> spinf-accordion-item
   spinf-alert-page --> spinf-alert
   spinf-button-page --> spinf-button
   spinf-pagination-page --> spinf-pagination
+  spinf-dropdown-page --> spinf-dropdown
+  spinf-dropdown-page --> spinf-dropdown-option
   spinf-segmented-buttons-page --> spinf-segmented-buttons
   aem-main --> app-root
   style app-root fill:#f9f,stroke:#333,stroke-width:4px
