@@ -38,14 +38,10 @@ npm install
 
 🧑‍💻 Servidor de desarrollo
 
-bash
-Copy code
-npm start
+npm start --silent
 
 🏗️ Compilación de producción
 
-bash
-Copy code
 npm run build
 
 🎨 Sistema de Diseño
