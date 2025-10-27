@@ -6,3 +6,4 @@ export * from './dropdown';
 export * from './segmented-buttons';
 export * from './slider';
 export * from './table';
+export * from './tabs';

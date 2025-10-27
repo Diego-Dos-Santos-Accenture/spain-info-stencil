@@ -80,6 +80,14 @@ export class AppComponents {
       );
     }
 
+    if (this.currentSubPage === 'tabs') {
+      return (
+        <Host>
+          <spinf-tabs-page></spinf-tabs-page>
+        </Host>
+      );
+    }
+
     return (
       <Host>
         <section class="components-page">
@@ -101,6 +109,7 @@ export class AppComponents {
               { name: 'Segmented Buttons', image: getAssetPath('MASTER_ICON'), id: 'segmented-buttons' },
               { name: 'Slider', image: getAssetPath('SLIDER'), id: 'slider' },
               { name: 'Table', image: getAssetPath('MASTER_ICON'), id: 'table' },
+              { name: 'Tabs', image: getAssetPath('MOBILE'), id: 'tabs' },
             ].map((component) => (
               <div part="spinf-card" class="spinf-card" onClick={() => this.handleCardClick(component.id)}>
                 <div class="spinf-card__content">

@@ -56,6 +56,7 @@ export class AppSidebarComponent {
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('dropdown'); }} class={this.currentSubPage === 'dropdown' ? 'active' : ''}>Dropdown</a></li>
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('slider'); }} class={this.currentSubPage === 'slider' ? 'active' : ''}>Slider</a></li>
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('table'); }} class={this.currentSubPage === 'table' ? 'active' : ''}>Table</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('tabs'); }} class={this.currentSubPage === 'tabs' ? 'active' : ''}>Tabs</a></li>
                               </ul>
                             )}
               </>

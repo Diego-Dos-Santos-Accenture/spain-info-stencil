@@ -1,4 +1,4 @@
-import { Component, h, Prop, State, Host } from '@stencil/core';
+import { Component, h, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'spinf-table',
