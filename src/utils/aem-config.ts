@@ -7,6 +7,7 @@ export const AEM_CONFIG = {
   IMAGES: {
     TURESPANA: '/content/dam/spain-info/images/turespana.png',
     PAGINATION: '/content/dam/spain-info/images/Pagination_v1.png',
+    SLIDER: '/content/dam/spain-info/images/Slider.png',
     MASTER_ICON: '/content/dam/spain-info/images/master-icon.png',
     EXPLORAR_ARROW: '/content/dam/spain-info/images/explorar-arrow.png',
     GOB_LOGO: '/content/dam/spain-info/images/gob-logo.png',
@@ -36,6 +37,7 @@ export const getAssetPath = (assetName: keyof typeof AEM_CONFIG.IMAGES): string 
     const localPaths: Record<string, string> = {
       TURESPANA: '/assets/images/turespana.png',
       PAGINATION: '/assets/images/Pagination_v1.png',
+      SLIDER: '/assets/images/Slider.png',
       MASTER_ICON: '/assets/images/master-icon.png',
       EXPLORAR_ARROW: '/assets/images/explorar-arrow.png',
       GOB_LOGO: '/assets/images/gob-logo.png',

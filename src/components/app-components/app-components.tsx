@@ -64,6 +64,22 @@ export class AppComponents {
       );
     }
 
+    if (this.currentSubPage === 'slider') {
+      return (
+        <Host>
+          <spinf-slider-page></spinf-slider-page>
+        </Host>
+      );
+    }
+
+    if (this.currentSubPage === 'table') {
+      return (
+        <Host>
+          <spinf-table-page></spinf-table-page>
+        </Host>
+      );
+    }
+
     return (
       <Host>
         <section class="components-page">
@@ -83,6 +99,8 @@ export class AppComponents {
               { name: 'Dropdown', image: getAssetPath('MASTER_ICON'), id: 'dropdown' },
               { name: 'Pagination', image: getAssetPath('PAGINATION'), id: 'pagination' },
               { name: 'Segmented Buttons', image: getAssetPath('MASTER_ICON'), id: 'segmented-buttons' },
+              { name: 'Slider', image: getAssetPath('SLIDER'), id: 'slider' },
+              { name: 'Table', image: getAssetPath('MASTER_ICON'), id: 'table' },
             ].map((component) => (
               <div part="spinf-card" class="spinf-card" onClick={() => this.handleCardClick(component.id)}>
                 <div class="spinf-card__content">
