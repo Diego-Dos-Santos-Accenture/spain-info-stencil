@@ -1,0 +1,183 @@
+.prg {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.prg-line {
+  position: relative;
+  flex: 1;
+  height: 2px;
+  background: #F2F2F2;
+}
+
+.prg-fill {
+  position: absolute;
+  top: 0;
+  height: 2px;
+  background: #E73625;
+  width: 40%;
+  left: 0;
+}
+
+.prg-actions {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.prg-icon {
+  width: 12px;
+  height: 12px;
+  object-fit: contain;
+}
+
+.prg-btn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #E73625;
+}
+
+.prg-btn:disabled {
+  background: #EAEAEA;
+  cursor: not-allowed;
+}
+
+.prg-btn:disabled .prg-icon {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(0%) contrast(100%);
+}
+
+.prg-btn:not(:disabled):hover {
+  background: #c41e03;
+}
+
+.prg-btn:focus {
+  outline: 2px solid #FFD300;
+  outline-offset: 2px;
+}
+
+.prg-btn:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Slider page styles */
+.slider-page {
+  padding-top: 2.5rem;
+  padding-left: 1.5rem;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.slider-page h1 {
+  font-family: 'Delight', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1B1C20;
+  margin-bottom: 1.5rem;
+}
+
+.slider-page p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #1D1C20;
+  margin-bottom: 1rem;
+}
+
+.slider-demo {
+  margin: 3rem 0;
+  padding: 0;
+  background: transparent;
+}
+
+.slider-master {
+  margin-left: 0;
+}
+
+.slider-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1B1C20;
+  margin-top: 32px;
+  margin-bottom: 78px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.slider-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.slider-examples img {
+  max-width: 100%;
+  height: auto;
+}
+
+.slider-examples h4 {
+  font-family: 'Delight', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1B1C20;
+  margin: 0;
+  margin-top: 32px;
+}
+
+.slider-progress-demo {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.slider-info {
+  margin: 2rem 0;
+}
+
+.slider-page p {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+    margin: 2rem 0;
+}
+
+.slider-info h2 {
+  font-family: 'Delight', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1B1C20;
+  margin: 2rem 0 1rem 0;
+}
+
+.slider-info p {
+    margin: 0;
+    color: #1B1C20;
+    background: transparent;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    border: none;
+}
+
+.slider-info h3 {
+  font-family: 'Delight', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #1B1C20;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.slider-info ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.slider-info li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}

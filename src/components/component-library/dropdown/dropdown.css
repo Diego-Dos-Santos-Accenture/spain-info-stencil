@@ -181,12 +181,11 @@ spinf-dropdown-option {
 }
 
 .dropdown-page p {
-  background: #F8F8F7;
-  padding: 1rem;
-  border-radius: 8px;
-  margin: 0 0 2rem 0;
-  color: #1B1C20;
-  line-height: 1.5;
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  margin: 2rem 0;
 }
 
 .dropdown-demo {

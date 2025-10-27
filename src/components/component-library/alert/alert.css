@@ -127,6 +127,14 @@ max-width: 1300px;
 margin: 0 auto;
 }
 
+.alert-page p {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+    margin: 2rem 0;
+}
+
 .alert-demo {
 margin: 3rem 0;
 padding: 0;
