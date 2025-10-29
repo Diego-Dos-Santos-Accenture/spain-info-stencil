@@ -19,12 +19,16 @@ graph TD;
   app-root --> app-navbar
   app-root --> app-sidebar
   app-root --> app-components
+  app-root --> app-modules
   app-components --> spinf-accordion-page
   app-components --> spinf-alert-page
   app-components --> spinf-button-page
   app-components --> spinf-pagination-page
   app-components --> spinf-dropdown-page
   app-components --> spinf-segmented-buttons-page
+  app-components --> spinf-slider-page
+  app-components --> spinf-table-page
+  app-components --> spinf-tabs-page
   spinf-accordion-page --> spinf-accordion
   spinf-accordion-page --> spinf-accordion-item
   spinf-alert-page --> spinf-alert
@@ -33,6 +37,10 @@ graph TD;
   spinf-dropdown-page --> spinf-dropdown
   spinf-dropdown-page --> spinf-dropdown-option
   spinf-segmented-buttons-page --> spinf-segmented-buttons
+  spinf-slider-page --> spinf-slider
+  spinf-table-page --> spinf-table
+  app-modules --> spinf-list-and-grids
+  spinf-list-and-grids --> list-and-grids
   style aem-main fill:#f9f,stroke:#333,stroke-width:4px
 ```
 

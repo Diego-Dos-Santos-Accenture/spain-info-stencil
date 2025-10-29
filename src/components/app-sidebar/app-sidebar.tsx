@@ -92,6 +92,33 @@ export class AppSidebarComponent {
                 )}
               </>
             )}
+
+            {this.currentPage === 'modulos' && (
+              <>
+                <button
+                  class={{
+                    menu__section: true,
+                    expanded: this.showComponents,
+                  }}
+                  onClick={this.toggleComponents}
+                >
+                  <span class="menu__title">Módulos</span>
+                  <span class="icon-wrapper">
+                    <img 
+                      src={this.showComponents ? "/assets/icons/circle-minus.svg" : "/assets/icons/circle-plus.svg"} 
+                      alt={this.showComponents ? "Collapse" : "Expand"}
+                      class="icon-svg"
+                    />
+                  </span>
+                </button>
+
+                {this.showComponents && (
+                  <ul class="submenu">
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('list-and-grids'); }} class={this.currentSubPage === 'list-and-grids' ? 'active' : ''}>List and Grids</a></li>
+                  </ul>
+                )}
+              </>
+            )}
           </nav>
         </aside>
       </Host>

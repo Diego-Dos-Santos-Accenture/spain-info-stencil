@@ -1,0 +1,64 @@
+.modules-page {
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+    max-width: 1300px;
+    margin: 0 auto
+}
+
+.modules-page h1 {
+    font-family: 'Delight', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left
+}
+
+.modules-page p {
+    background: #F8F8F7;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+    margin: 2rem 0;
+    font-family: 'Funnel Sans', sans-serif;
+    font-size: 18px;
+    color: #1B1C20;
+    line-height: 1.6;
+}
+
+.info-text {
+    background: transparent !important;
+    border: none !important;
+    margin: 3rem 0 !important;
+}
+
+.modules-layout {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 32px;
+    align-items: start
+}
+
+.modules-aside h2 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1B1C20;
+    margin: 16px 0 8px
+}
+
+.modules-aside p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #1B1C20
+}
+
+.modules-aside ul {
+    margin-left: 1.5rem
+}
+
+.modules-content .module-section {
+    background: transparent;
+    border: none
+}
+
+.module-placeholder {
+    background: transparent;
+}

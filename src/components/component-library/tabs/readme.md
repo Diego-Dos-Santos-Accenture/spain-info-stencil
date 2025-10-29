@@ -1,42 +1,23 @@
-# spinf-tabs
+# spinf-tabs-page
 
-Componente de tabs para organizar contenido en secciones alternables.
 
-## Props
 
-### spinf-tabs
+<!-- Auto Generated Below -->
 
-| Property    | Attribute    | Description           | Type     | Default |
-| ----------- | ------------ | --------------------- | -------- | ------- |
-| `activeTab` | `active-tab` | Tab activo inicial    | `number` | `0`     |
 
-### spinf-tab-item
+## Dependencies
 
-| Property     | Attribute    | Description            | Type      | Default |
-| ------------ | ------------ | ---------------------- | --------- | ------- |
-| `disabled`   | `disabled`   | Si el tab está deshabilitado | `boolean` | `false` |
-| `index`      | `index`      | Índice del tab         | `number`  | `0`     |
+### Used by
 
-## Events
+ - [app-components](../../app-components)
 
-| Event      | Description        | Type                  |
-| ---------- | ------------------ | --------------------- |
-| `tabChange` | Evento al cambiar de tab | `CustomEvent<number>` |
+### Graph
+```mermaid
+graph TD;
+  app-components --> spinf-tabs-page
+  style spinf-tabs-page fill:#f9f,stroke:#333,stroke-width:4px
+```
 
-## Usando el componente
+----------------------------------------------
 
-\`\`\`html
-<spinf-tabs active-tab="0">
-  <spinf-tab-item index="0">Tab 1</spinf-tab-item>
-  <spinf-tab-item index="1">Tab 2</spinf-tab-item>
-  <spinf-tab-item index="2" disabled>Tab 3</spinf-tab-item>
-</spinf-tabs>
-\`\`\`
-
-## Características
-
-- Estados: Active, Hover, Selected, Disabled
-- Interacción con teclado (Arrow keys)
-- Responsive con scroll en mobile
-- Accesibilidad completa (ARIA)
-- Animaciones suaves
+*Built with [StencilJS](https://stenciljs.com/)*

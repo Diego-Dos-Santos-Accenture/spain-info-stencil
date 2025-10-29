@@ -1,0 +1,97 @@
+.components-page {
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+    max-width: 1300px;
+    margin: 0 auto
+}
+
+.components-page h1 {
+    font-family: 'Delight', sans-serif;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left
+}
+
+.components-page p {
+    background: #F8F8F7;
+    padding: 40px 32px;
+    border-radius: .75rem;
+    border: 1px solid #e2e8f0;
+    margin: 2rem 0;
+    max-width: max-content;
+    font-family: 'Funnel Sans', sans-serif;
+    font-size: 16px;
+    color: #1B1C20
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.5rem
+}
+
+.spinf-card {
+    border: 1px solid rgba(220, 223, 227, 1);
+    border-radius: .5rem;
+    background: #F8F8F7;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+    padding: 24px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow .2s ease, transform .2s ease;
+    cursor: pointer;
+    overflow: hidden
+}
+
+.spinf-card:hover {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
+    transform: translateY(-1px)
+}
+
+.spinf-card__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%
+}
+
+.spinf-card__title {
+    color: #1B1C20;
+    font-family: 'Funnel Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    text-align: left;
+    flex: 1
+}
+
+.spinf-link--flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+    text-decoration: none;
+    align-self: flex-end
+}
+
+.spinf-link__text {
+    font-family: 'Funnel Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #B91602;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px
+}
+
+.arrow-image {
+    width: 32px;
+    height: 16px
+}

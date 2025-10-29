@@ -99,10 +99,27 @@ p {
   color: #1B1C20;
   font-family: 'Funnel Sans', sans-serif;
   font-size: 16px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: left;
+  flex: 1;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
   margin: 0;
+}
+
+.components-page p {
+  background: #F8F8F7;
+  padding: 40px 32px;
+  max-width: max-content;
+  border-radius: .75rem;
+  border: 1px solid #e2e8f0;
+  margin: 2rem 0;
+  font-family: 'Funnel Sans', sans-serif;
+  font-size: 16px;
+  color: #1B1C20
 }
 
 .spinf-vertical-card__image {

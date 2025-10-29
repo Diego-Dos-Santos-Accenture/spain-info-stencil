@@ -40,6 +40,9 @@
 - [spinf-pagination-page](../component-library/pagination)
 - [spinf-dropdown-page](../component-library/dropdown)
 - [spinf-segmented-buttons-page](../component-library/segmented-buttons)
+- [spinf-slider-page](../component-library/slider)
+- [spinf-table-page](../component-library/table)
+- [spinf-tabs-page](../component-library/tabs)
 
 ### Graph
 ```mermaid
@@ -50,6 +53,9 @@ graph TD;
   app-components --> spinf-pagination-page
   app-components --> spinf-dropdown-page
   app-components --> spinf-segmented-buttons-page
+  app-components --> spinf-slider-page
+  app-components --> spinf-table-page
+  app-components --> spinf-tabs-page
   spinf-accordion-page --> spinf-accordion
   spinf-accordion-page --> spinf-accordion-item
   spinf-alert-page --> spinf-alert
@@ -58,6 +64,8 @@ graph TD;
   spinf-dropdown-page --> spinf-dropdown
   spinf-dropdown-page --> spinf-dropdown-option
   spinf-segmented-buttons-page --> spinf-segmented-buttons
+  spinf-slider-page --> spinf-slider
+  spinf-table-page --> spinf-table
   app-root --> app-components
   style app-components fill:#f9f,stroke:#333,stroke-width:4px
 ```

@@ -1,0 +1,416 @@
+:host {
+    display: block;
+    font-family: 'Funnel Sans', sans-serif;
+}
+
+.list-and-grids-module {
+    background: #F8F8F7;
+    padding: 32px;
+    border-radius: 16px;
+    margin-bottom: 64px;
+}
+
+.module-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 32px 0;
+    color: #1B1C20;
+}
+
+.row {
+    display: flex;
+    gap: 32px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 16px 0;
+    scrollbar-width: none;
+}
+
+.row::-webkit-scrollbar {
+    display: none;
+}
+
+.row.dragging {
+    cursor: grabbing;
+}
+
+/* Fila 1 — intro-with-cards */
+.row--intro-with-cards .card--intro {
+    width: 358px;
+    height: 372px;
+    min-width: 358px;
+    min-height: 372px;
+    flex-shrink: 0;
+    padding: 32px;
+    background: #fff;
+    color: #1B1C20;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row--intro-with-cards .card--intro h2 {
+    font-size: 28px;
+    font-weight: 700;
+    margin: 0 0 16px 0;
+    color: #1B1C20;
+}
+
+.row--intro-with-cards .card--intro p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 0 auto 0;
+    color: #1B1C20;
+}
+
+.row--intro-with-cards .card--intro .btn {
+    background: #E71C03;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.row--intro-with-cards .card--image {
+    position: relative;
+    width: 248px;
+    height: 372px;
+    min-width: 248px;
+    min-height: 372px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.row--intro-with-cards .card--image img {
+    width: 248px;
+    height: 372px;
+    object-fit: cover;
+    display: block;
+}
+
+.row--intro-with-cards .card--image .heart-icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.row--intro-with-cards .card--image .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px 16px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+}
+
+.row--intro-with-cards .card--image .overlay h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+}
+
+.intro-card {
+    margin-top: 124px;
+}
+
+.intro-card p {
+    margin: 16px 0;
+}
+
+/* Fila 2 — photo-list */
+.row--photo-list .card--photo {
+    width: 341px;
+    height: 327px;
+    min-width: 341px;
+    min-height: 327px;
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.row--photo-list .card--photo img {
+    width: 341px;
+    height: 255px;
+    object-fit: cover;
+    display: block;
+}
+
+.row--photo-list .card--photo h4 {
+    margin: 0;
+    padding: 24px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1B1C20;
+}
+
+/* Fila 3 — journey-cards */
+.row--journey-cards .card--journey {
+    display: flex;
+    width: 621px;
+    height: 355px;
+    min-width: 621px;
+    min-height: 355px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    background: #F8F8F7;
+    overflow: hidden;
+}
+
+.row--journey-cards .card--journey .journey-image-wrapper {
+    position: relative;
+    width: 248px;
+    height: 355px;
+    flex-shrink: 0;
+}
+
+.row--journey-cards .card--journey .journey-image-wrapper img:first-child {
+    width: 248px;
+    height: 355px;
+    object-fit: cover;
+    display: block;
+}
+
+.row--journey-cards .card--journey .heart-icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.row--journey-cards .card--journey .content {
+    flex: 1;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row--journey-cards .card--journey .journey-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 73px;
+    margin-bottom: 16px;
+}
+
+.row--journey-cards .card--journey .detail-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #1B1C20;
+}
+
+.row--journey-cards .card--journey .detail-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.row--journey-cards .card--journey h3 {
+    font-family: 'Funnel Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1B1C20;
+    margin: 0 0 auto 0;
+}
+
+.row--journey-cards .card--journey .btn-explore {
+    background: transparent;
+    border: 2px solid #1B1C20;
+    width: 170px;
+    height: 44px;
+    border-radius: 40px;
+    padding: 0 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1B1C20;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.row--journey-cards .card--journey .arrow-icon {
+    width: 16px;
+    height: 16px;
+    filter: brightness(0);
+}
+
+.row--journey-cards .card--journey-small {
+    position: relative;
+    width: 248px;
+    height: 355px;
+    min-width: 248px;
+    min-height: 355px;
+    flex-shrink: 0;
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.row--journey-cards .card--journey-small img:first-child {
+    width: 248px;
+    height: 355px;
+    object-fit: cover;
+    display: block;
+}
+
+.row--journey-cards .card--journey-small .heart-icon {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 24px;
+    height: 24px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.row--journey-cards .card--journey-small .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 24px 16px;
+    background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 100%);
+}
+
+.row--journey-cards .card--journey-small .overlay h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    max-width: 191px;
+}
+
+/* Fila 4 — masonry-grid */
+.masonry-section {
+    width: max-content;
+    background: #F8F8F7;
+    padding: 32px;
+    border-radius: 16px;
+    margin-top: 64px;
+}
+
+.masonry-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1B1C20;
+    margin: 0 0 64px 0;
+}
+
+.masonry-grid {
+    display: flex;
+    gap: 24px;
+    justify-content: start;
+}
+
+.masonry-column {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 341px;
+}
+
+.masonry-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 341px;
+    display: flex;
+    flex-direction: column;
+}
+
+.masonry-card-image {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.masonry-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.masonry-card-description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px; /* contenido separado de los bordes del card */
+    flex-shrink: 0;
+    background: #fff; /* asegura fondo sólido para el texto */
+}
+
+.masonry-card-description--small {
+    min-height: 24px; /* altura base, permite crecer si el texto lo requiere */
+}
+
+.masonry-card-description--large {
+    min-height: 48px; /* altura base para dos líneas */
+}
+
+.masonry-card-description h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #1B1C20;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* clamp por tipo */
+.masonry-card-description--small h3 {
+    -webkit-line-clamp: 1;
+}
+
+.masonry-card-description--large h3 {
+    -webkit-line-clamp: 2;
+}
+
+/* Columna 1: top 549, bottom 327 */
+.masonry-column:nth-child(1) .masonry-card:nth-child(1) .masonry-card-image {
+    height: 549px;
+}
+
+.masonry-column:nth-child(1) .masonry-card:nth-child(2) .masonry-card-image {
+    height: 327px;
+}
+
+/* Columna 2: top 327, bottom 549 */
+.masonry-column:nth-child(2) .masonry-card:nth-child(1) .masonry-card-image {
+    height: 327px;
+}
+
+.masonry-column:nth-child(2) .masonry-card:nth-child(2) .masonry-card-image {
+    height: 549px;
+}
+
+/* Columna 3: top 549, bottom 327 */
+.masonry-column:nth-child(3) .masonry-card:nth-child(1) .masonry-card-image {
+    height: 549px;
+}
+
+.masonry-column:nth-child(3) .masonry-card:nth-child(2) .masonry-card-image {
+    height: 327px;
+}

@@ -3,7 +3,7 @@ import { Component, h, Prop, Event, EventEmitter } from '@stencil/core';
 @Component({
   tag: 'spinf-button',
   styleUrl: 'button.css',
-  shadow: false,
+  shadow: true,
 })
 export class SpinfButton {
   @Prop() variant: 'primary' | 'secondary' | 'tertiary' | 'link' = 'primary';

@@ -19,7 +19,7 @@
   },
   "include": [
     "src"
-  ],
+, "modules/list-and-grids"  ],
   "exclude": [
     "node_modules"
   ]
