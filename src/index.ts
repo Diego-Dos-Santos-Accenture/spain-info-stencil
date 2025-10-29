@@ -26,3 +26,14 @@ export * from './aem-main';
 
 // Utilidades para AEM
 export * from './utils/aem-config';
+
+// Registrar web components externos de módulos si están disponibles
+try {
+  // eslint-disable-next-line @typescript-eslint/no-var-requires
+  const loader = require('../modules/list-and-grids/loader');
+  if (loader && typeof loader.defineCustomElements === 'function') {
+    loader.defineCustomElements(window);
+  }
+} catch (e) {
+  // Ignorar si el paquete no está disponible en entorno actual
+}

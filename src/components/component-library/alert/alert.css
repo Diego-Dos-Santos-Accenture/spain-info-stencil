@@ -121,14 +121,14 @@
 }
 
 .alert-page {
-padding-top: 2.5rem;
-padding-left: 1.5rem;
-max-width: 1300px;
-margin: 0 auto;
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .alert-page p {
-    background: #f8fafc;
+    background: #F8F8F7;
     padding: 1.5rem;
     border-radius: 0.75rem;
     border: 1px solid #e2e8f0;

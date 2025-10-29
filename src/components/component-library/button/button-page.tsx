@@ -88,23 +88,32 @@ export class SpinfButtonPage {
 
           <h2>Dark Theme</h2>
           <div class="button-section dark-theme">
+            <h3>All Button Variants - Dark Theme</h3>
             <div class="button-row">
-              <div class="button-variant">
-                <h4>Primary</h4>
-                <spinf-button variant="primary" size="m" icon="/assets/images/master-icon.png" onButtonClick={this.handleButtonClick}>Button</spinf-button>
-              </div>
-              <div class="button-variant">
-                <h4>Secondary</h4>
-                <spinf-button variant="secondary" size="m" icon="/assets/images/master-icon.png" dark-theme onButtonClick={this.handleButtonClick}>Button</spinf-button>
-              </div>
-              <div class="button-variant">
-                <h4>Tertiary</h4>
-                <spinf-button variant="tertiary" size="m" icon="/assets/images/master-icon.png" dark-theme onButtonClick={this.handleButtonClick}>Button</spinf-button>
-              </div>
-              <div class="button-variant">
-                <h4>Button-link</h4>
-                <spinf-button variant="link" size="m" icon="/assets/images/master-icon.png" onButtonClick={this.handleButtonClick}>Button</spinf-button>
-              </div>
+              <spinf-button variant="primary" size="l" icon="/assets/images/master-icon.png" onButtonClick={this.handleButtonClick}>Button</spinf-button>
+              <spinf-button variant="primary" size="m" icon="/assets/images/master-icon.png" onButtonClick={this.handleButtonClick}>Button</spinf-button>
+              <spinf-button variant="primary" size="xs" icon="/assets/images/master-icon.png" onButtonClick={this.handleButtonClick}>Button</spinf-button>
+            </div>
+            
+            <h3>Secondary</h3>
+            <div class="button-row">
+              <spinf-button variant="secondary" size="l" icon="/assets/images/master-icon.png" dark-theme onButtonClick={this.handleButtonClick}>Button</spinf-button>
+              <spinf-button variant="secondary" size="m" icon="/assets/images/master-icon.png" dark-theme onButtonClick={this.handleButtonClick}>Button</spinf-button>
+              <spinf-button variant="secondary" size="xs" icon="/assets/images/master-icon.png" dark-theme onButtonClick={this.handleButtonClick}>Button</spinf-button>
+            </div>
+            
+            <h3>Tertiary</h3>
+            <div class="button-row">
+              <spinf-button variant="tertiary" size="l" icon="/assets/images/master-icon.png" dark-theme onButtonClick={this.handleButtonClick}>Button</spinf-button>
+              <spinf-button variant="tertiary" size="m" icon="/assets/images/master-icon.png" dark-theme onButtonClick={this.handleButtonClick}>Button</spinf-button>
+              <spinf-button variant="tertiary" size="xs" icon="/assets/images/master-icon.png" dark-theme onButtonClick={this.handleButtonClick}>Button</spinf-button>
+            </div>
+            
+            <h3>Button Link</h3>
+            <div class="button-row">
+              <spinf-button variant="link" size="l" icon="/assets/images/master-icon.png" onButtonClick={this.handleButtonClick}>Button</spinf-button>
+              <spinf-button variant="link" size="m" icon="/assets/images/master-icon.png" onButtonClick={this.handleButtonClick}>Button</spinf-button>
+              <spinf-button variant="link" size="xs" icon="/assets/images/master-icon.png" onButtonClick={this.handleButtonClick}>Button</spinf-button>
             </div>
           </div>
 

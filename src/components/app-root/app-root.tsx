@@ -31,7 +31,7 @@ export class AppRoot {
               {this.currentPage === 'componentes' && <app-components onSubNavigation={this.handleSubNavigation} currentSubPage={this.currentSubPage}></app-components>}
               {this.currentPage === 'fundamentos' && <div>Página de Fundamentos</div>}
               {this.currentPage === 'inicio' && <div>Página de Inicio</div>}
-              {this.currentPage === 'modulos' && <div>Página de Módulos</div>}
+              {this.currentPage === 'modulos' && <app-modules onSubNavigation={this.handleSubNavigation} currentSubPage={this.currentSubPage}></app-modules>}
               {this.currentPage === 'templates' && <div>Página de Templates</div>}
             </main>
           </div>

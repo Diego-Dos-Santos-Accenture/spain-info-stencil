@@ -56,6 +56,7 @@ export class AppSidebarComponent {
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('dropdown'); }} class={this.currentSubPage === 'dropdown' ? 'active' : ''}>Dropdown</a></li>
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('slider'); }} class={this.currentSubPage === 'slider' ? 'active' : ''}>Slider</a></li>
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('table'); }} class={this.currentSubPage === 'table' ? 'active' : ''}>Table</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('tabs'); }} class={this.currentSubPage === 'tabs' ? 'active' : ''}>Tabs</a></li>
                               </ul>
                             )}
               </>
@@ -87,6 +88,33 @@ export class AppSidebarComponent {
                     <li><a href="#primitivos" class="active-strong">Primitivos</a></li>
                     <li><a href="#tokens">Tokens</a></li>
                     <li><a href="#iconography">Iconography</a></li>
+                  </ul>
+                )}
+              </>
+            )}
+
+            {this.currentPage === 'modulos' && (
+              <>
+                <button
+                  class={{
+                    menu__section: true,
+                    expanded: this.showComponents,
+                  }}
+                  onClick={this.toggleComponents}
+                >
+                  <span class="menu__title">Módulos</span>
+                  <span class="icon-wrapper">
+                    <img 
+                      src={this.showComponents ? "/assets/icons/circle-minus.svg" : "/assets/icons/circle-plus.svg"} 
+                      alt={this.showComponents ? "Collapse" : "Expand"}
+                      class="icon-svg"
+                    />
+                  </span>
+                </button>
+
+                {this.showComponents && (
+                  <ul class="submenu">
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('list-and-grids'); }} class={this.currentSubPage === 'list-and-grids' ? 'active' : ''}>List and Grids</a></li>
                   </ul>
                 )}
               </>

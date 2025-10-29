@@ -80,16 +80,26 @@ export class AppComponents {
       );
     }
 
+    if (this.currentSubPage === 'tabs') {
+      return (
+        <Host>
+          <spinf-tabs-page></spinf-tabs-page>
+        </Host>
+      );
+    }
+
     return (
       <Host>
         <section class="components-page">
           <h1>Introducción a componentes</h1>
-          <p>
-            Los fundamentos de un sistema de diseño son las reglas básicas que guían la construcción de una interfaz, 
-            y que garantizan el seguimiento de una misma línea de diseño en toda la experiencia, 
-            desde aspectos visuales (como el uso de la tipografía y el color) hasta otros aspectos clave 
-            como la accesibilidad y el tono en los textos.
-          </p>
+          <div class="components-page__description">
+            <p>
+              Los fundamentos de un sistema de diseño son las reglas básicas que guían la construcción de una interfaz, 
+              y que garantizan el seguimiento de una misma línea de diseño en toda la experiencia, 
+              desde aspectos visuales (como el uso de la tipografía y el color) hasta otros aspectos clave 
+              como la accesibilidad y el tono en los textos.
+            </p>
+          </div>
 
           <div class="cards-grid">
             {[
@@ -101,6 +111,7 @@ export class AppComponents {
               { name: 'Segmented Buttons', image: getAssetPath('MASTER_ICON'), id: 'segmented-buttons' },
               { name: 'Slider', image: getAssetPath('SLIDER'), id: 'slider' },
               { name: 'Table', image: getAssetPath('MASTER_ICON'), id: 'table' },
+              { name: 'Tabs', image: getAssetPath('MOBILE'), id: 'tabs' },
             ].map((component) => (
               <div part="spinf-card" class="spinf-card" onClick={() => this.handleCardClick(component.id)}>
                 <div class="spinf-card__content">
