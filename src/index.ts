@@ -13,6 +13,7 @@ export type * from './components.d.ts';
 
 // Componentes principales
 export * from './components/app-header/app-header';
+export * from './components/app-footer/app-footer';
 export * from './components/app-sidebar/app-sidebar';
 export * from './components/app-root/app-root';
 export * from './components/app-navbar/app-navbar';
