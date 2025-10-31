@@ -15,7 +15,7 @@ export class SpinfButtonPage {
   render() {
     return (
       <section class="button-page">
-        <h1>Button</h1>
+        <h1>Botón</h1>
         <p>
           Los botones son elementos interactivos que permiten a los usuarios realizar acciones. 
           Proporcionan una forma clara y accesible de ejecutar comandos, navegar o confirmar decisiones.

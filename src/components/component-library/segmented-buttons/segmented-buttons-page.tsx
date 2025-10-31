@@ -20,7 +20,7 @@ export class SpinfSegmentedButtonsPage {
   render() {
     return (
       <section class="segmented-buttons-page">
-        <h1>Segmented Buttons</h1>
+        <h1>Botón segmentado</h1>
         <p>
           Los botones segmentados permiten seleccionar una opción entre un conjunto de opciones mutuamente excluyentes. 
           Son ideales para filtrar contenido, cambiar vistas o seleccionar estados.

@@ -16,9 +16,9 @@ export class SpinfSliderPage {
   render() {
     return (
       <section class="slider-page">
-        <h1>Slider</h1>
+        <h1>Control deslizante</h1>
         <p>
-          El Slider es un componente interactivo que permite al usuario explorar y navegar por un conjunto de elementos de manera secuencial y dinámica dentro de un espacio reducido.
+          El control deslizante es un componente interactivo que permite a los usuarios explorar y navegar por un conjunto de elementos de manera secuencial y dinámica dentro de un espacio reducido.
         </p>
 
         <div class="slider-info">

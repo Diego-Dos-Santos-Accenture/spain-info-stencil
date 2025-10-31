@@ -1,0 +1,182 @@
+.text-field {
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 6px;
+    font-family: 'Funnel Sans', sans-serif
+}
+
+.text-field__label-outside {
+    font-size: 14px;
+    color: #1B1C20;
+    margin-bottom: 6px
+}
+
+.text-field__control {
+    position: relative
+}
+
+.tf-page {
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+    font-family: 'Funnel Sans', sans-serif
+}
+
+.tf-page p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #1D1C20;
+    margin-bottom: 1rem;
+    background: #F8F8F7;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    border: 1px solid #e2e8f0;
+    margin: 2rem 0;
+}
+
+.info-text p {
+    margin: 0;
+    color: #1B1C20;
+    background: transparent;
+    margin-bottom: 16px;
+    line-height: 1.5;
+    border: none;
+}
+
+.tf-title {
+    font-family: 'Delight', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 24px 0 32px;
+    color: #1B1C20
+}
+
+.tf-card-examples {
+    background: #F8F8F7;
+    border-radius: 12px;
+    padding: 110px 95px !important;
+}
+
+.tf-grid-spec img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 12px
+}
+
+.tf-example-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px 23px !important;
+    align-items: start
+}
+
+.tf-page {
+    padding-top: 2.5rem;
+    padding-left: 1.5rem;
+}
+
+.text-field__label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 24px;
+    color: #666;
+    transition: all .15s ease-in-out;
+    pointer-events: none;
+    background: #fff;
+    padding: 0 8px
+}
+
+.text-field__input {
+    border: 2px solid #1D1C20;
+    border-radius: 42px;
+    height: 52px;
+    width: 310px;
+    padding: 0 40px 0 24px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #1B1C20;
+    background: #fff;
+    width: 262px
+}
+
+/* Al escribir, bajamos ligeramente el contenido para centrar mejor */
+.text-field--inside.has-value .text-field__input,
+.text-field--inside.is-focused .text-field__input {
+    padding-top: 3px;
+}
+
+.text-field--s .text-field__input {
+    padding: 0 40px 0 24px;
+    font-size: 14px;
+    line-height: 20px;
+    height: 32px;
+    width: 262px;
+    border-radius: 42px
+}
+
+.text-field.is-focused:not(.is-error) .text-field__input {
+    outline: 3px solid #FFD300;
+    outline-offset: 2px
+}
+
+.text-field--inside.has-value .text-field__label,
+.text-field--inside.is-focused .text-field__label {
+    top: 12px;
+    /* baja un poco más cuando se escribe */
+    left: 20px;
+    font-size: 12px;
+    color: #666;
+    background: #fff
+}
+
+.text-field__support {
+    font-size: 12px;
+    color: #666
+}
+
+.text-field.is-error .text-field__input {
+    border-color: #E71C03;
+    outline: none;
+    /* sin halo amarillo en error */
+    box-shadow: none
+}
+
+.text-field.is-error.is-focused .text-field__input {
+    /* defensa adicional */
+    outline: none;
+    box-shadow: none
+}
+
+.text-field.is-error .text-field__support {
+    color: #E71C03
+}
+
+/* Placeholder color */
+.text-field__input::placeholder {
+    color: #666666;
+    opacity: 1
+}
+
+/* Botón para limpiar */
+.text-field__clear {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer
+}
+
+.text-field__clear img {
+    width: 16px;
+    height: 16px
+}

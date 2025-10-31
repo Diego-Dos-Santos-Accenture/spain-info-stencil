@@ -20,7 +20,7 @@ export class SpinfTablePage {
   render() {
     return (
       <section class="table-page">
-        <h1>Table</h1>
+        <h1>Tablas</h1>
         <p>
           Las tablas organizan y presentan datos en filas y columnas, facilitando su lectura, comparación y análisis.
         </p>

@@ -36,6 +36,7 @@ graph TD;
   app-components --> spinf-slider-page
   app-components --> spinf-table-page
   app-components --> spinf-tabs-page
+  app-components --> spinf-text-field-page
   spinf-accordion-page --> spinf-accordion
   spinf-accordion-page --> spinf-accordion-item
   spinf-alert-page --> spinf-alert
@@ -46,6 +47,7 @@ graph TD;
   spinf-segmented-buttons-page --> spinf-segmented-buttons
   spinf-slider-page --> spinf-slider
   spinf-table-page --> spinf-table
+  spinf-text-field-page --> spinf-text-field
   app-modules --> spinf-list-and-grids
   spinf-list-and-grids --> list-and-grids
   aem-main --> app-root

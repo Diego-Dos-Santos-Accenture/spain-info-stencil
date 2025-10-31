@@ -49,14 +49,15 @@ export class AppSidebarComponent {
                             {this.showComponents && (
                               <ul class="submenu">
                                 <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('acordeon'); }} class={this.currentSubPage === 'acordeon' ? 'active' : ''}>Acordeón</a></li>
-                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('alert'); }} class={this.currentSubPage === 'alert' ? 'active' : ''}>Alert</a></li>
-                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('button'); }} class={this.currentSubPage === 'button' ? 'active' : ''}>Button</a></li>
-                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('pagination'); }} class={this.currentSubPage === 'pagination' ? 'active' : ''}>Pagination</a></li>
-                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('segmented-buttons'); }} class={this.currentSubPage === 'segmented-buttons' ? 'active' : ''}>Segmented Buttons</a></li>
-                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('dropdown'); }} class={this.currentSubPage === 'dropdown' ? 'active' : ''}>Dropdown</a></li>
-                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('slider'); }} class={this.currentSubPage === 'slider' ? 'active' : ''}>Slider</a></li>
-                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('table'); }} class={this.currentSubPage === 'table' ? 'active' : ''}>Table</a></li>
-                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('tabs'); }} class={this.currentSubPage === 'tabs' ? 'active' : ''}>Tabs</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('alert'); }} class={this.currentSubPage === 'alert' ? 'active' : ''}>Alerta</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('button'); }} class={this.currentSubPage === 'button' ? 'active' : ''}>Botones</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('pagination'); }} class={this.currentSubPage === 'pagination' ? 'active' : ''}>Paginación</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('segmented-buttons'); }} class={this.currentSubPage === 'segmented-buttons' ? 'active' : ''}>Botón segmentado</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('dropdown'); }} class={this.currentSubPage === 'dropdown' ? 'active' : ''}>Desplegable</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('slider'); }} class={this.currentSubPage === 'slider' ? 'active' : ''}>Control deslizante</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('table'); }} class={this.currentSubPage === 'table' ? 'active' : ''}>Tablas</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('tabs'); }} class={this.currentSubPage === 'tabs' ? 'active' : ''}>Pestañas</a></li>
+                                <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('text-field'); }} class={this.currentSubPage === 'text-field' ? 'active' : ''}>Campo de texto</a></li>
                               </ul>
                             )}
               </>
@@ -114,7 +115,7 @@ export class AppSidebarComponent {
 
                 {this.showComponents && (
                   <ul class="submenu">
-                    <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('list-and-grids'); }} class={this.currentSubPage === 'list-and-grids' ? 'active' : ''}>List and Grids</a></li>
+                    <li><a href="#" onClick={(e) => { e.preventDefault(); this.handleSubNavigation('list-and-grids'); }} class={this.currentSubPage === 'list-and-grids' ? 'active' : ''}>Listas y rejillas</a></li>
                   </ul>
                 )}
               </>
