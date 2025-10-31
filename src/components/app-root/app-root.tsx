@@ -35,6 +35,7 @@ export class AppRoot {
               {this.currentPage === 'templates' && <div>Página de Templates</div>}
             </main>
           </div>
+          <app-footer></app-footer>
         </div>
       </Host>
     );
