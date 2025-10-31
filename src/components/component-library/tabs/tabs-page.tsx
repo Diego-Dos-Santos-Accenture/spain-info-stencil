@@ -28,9 +28,9 @@ export class SpinfTabsPage {
   render() {
     return (
       <section class="tabs-page">
-        <h1>Tabs</h1>
+        <h1>Pestañas</h1>
         <p>
-          Los Tabs permiten organizar contenido en secciones alternables en una misma superficie.
+          Las pestañas permiten organizar contenido en secciones alternables en una misma superficie.
         </p>
 
         <div class="tabs-info">

@@ -15,7 +15,7 @@ export class SpinfPaginationPage {
   render() {
     return (
       <section class="pagination-page">
-        <h1>Pagination</h1>
+        <h1>Paginación</h1>
         <p>
           La paginación se emplea cuando se necesita dividir un gran volumen de contenido en secciones más manejables, 
           mejorando así la navegación y el rendimiento de la interfaz.

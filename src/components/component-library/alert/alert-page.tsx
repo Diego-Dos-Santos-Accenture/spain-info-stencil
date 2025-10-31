@@ -9,7 +9,7 @@ export class SpinfAlertPage {
   render() {
     return (
       <section class="alert-page">
-        <h1>Alert</h1>
+        <h1>Alerta</h1>
         <p>
           Las alertas permiten mostrar mensajes importantes al usuario de forma clara y diferenciada 
           según el tipo de información. Pueden indicar errores, advertencias, confirmaciones de éxito 

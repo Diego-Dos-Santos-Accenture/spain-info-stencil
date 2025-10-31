@@ -9,15 +9,15 @@ export class SpinfListAndGrids {
   render() {
     return (
       <section class="modules-page">
-        <h1>List and Grids</h1>
+        <h1>Listas y cuadrículas</h1>
         <p>
-          Los listados de card son un patrón de presentación de contenido que permite organizar y explorar múltiples elementos de forma clara y estructurada.
+          Las listas y cuadrículas son un patrón de presentación de contenido que permite organizar y explorar múltiples elementos de forma clara y estructurada.
         </p>
 
         <div class="modules-content">
 
           <p class="info-text">
-            El objetivo de las listas y grids de cards es facilitar la navegación, comparación y descubrimiento de destinos, experiencias o recursos dentro de spain.info.
+            El objetivo de las listas y cuadrículas es facilitar la navegación, comparación y descubrimiento de destinos, experiencias o recursos dentro de spain.info.
             <br />
             En desktop, se emplean principalmente listados horizontales o en formato grid alterno (Masonry).
             <br />

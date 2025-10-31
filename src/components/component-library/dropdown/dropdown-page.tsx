@@ -15,9 +15,9 @@ export class DropdownPage {
   render() {
     return (
       <section class="dropdown-page">
-        <h1>Dropdown</h1>
+        <h1>Desplegable</h1>
         <p>
-          El dropdown despliega una lista de opciones al interactuar con él, permitiendo al usuario seleccionar un valor o acceder a acciones adicionales.
+          El desplegable es un componente que permite a los usuarios seleccionar una opción de una lista.
         </p>
 
         <div class="dropdown-behavior">

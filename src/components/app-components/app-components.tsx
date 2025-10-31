@@ -88,6 +88,14 @@ export class AppComponents {
       );
     }
 
+    if (this.currentSubPage === 'text-field') {
+      return (
+        <Host>
+          <spinf-text-field-page></spinf-text-field-page>
+        </Host>
+      );
+    }
+
     return (
       <Host>
         <section class="components-page">
@@ -104,14 +112,15 @@ export class AppComponents {
           <div class="cards-grid">
             {[
               { name: 'Acordeón', image: getAssetPath('MASTER_ICON'), id: 'acordeon' },
-              { name: 'Alert', image: getAssetPath('MASTER_ICON'), id: 'alert' },
-              { name: 'Button', image: getAssetPath('MASTER_ICON'), id: 'button' },
-              { name: 'Dropdown', image: getAssetPath('MASTER_ICON'), id: 'dropdown' },
-              { name: 'Pagination', image: getAssetPath('PAGINATION'), id: 'pagination' },
-              { name: 'Segmented Buttons', image: getAssetPath('MASTER_ICON'), id: 'segmented-buttons' },
-              { name: 'Slider', image: getAssetPath('SLIDER'), id: 'slider' },
-              { name: 'Table', image: getAssetPath('MASTER_ICON'), id: 'table' },
-              { name: 'Tabs', image: getAssetPath('MOBILE'), id: 'tabs' },
+              { name: 'Alerta', image: getAssetPath('MASTER_ICON'), id: 'alert' },
+              { name: 'Botones', image: getAssetPath('MASTER_ICON'), id: 'button' },
+              { name: 'Desplegable', image: getAssetPath('MASTER_ICON'), id: 'dropdown' },
+              { name: 'Paginación', image: getAssetPath('PAGINATION'), id: 'pagination' },
+              { name: 'Botón segmentado', image: getAssetPath('MASTER_ICON'), id: 'segmented-buttons' },
+              { name: 'Control deslizante', image: getAssetPath('SLIDER'), id: 'slider' },
+              { name: 'Tablas', image: getAssetPath('MASTER_ICON'), id: 'table' },
+              { name: 'Pestañas', image: getAssetPath('MOBILE'), id: 'tabs' },
+              { name: 'Campo de texto', image: getAssetPath('MASTER_ICON'), id: 'text-field' },
             ].map((component) => (
               <div part="spinf-card" class="spinf-card" onClick={() => this.handleCardClick(component.id)}>
                 <div class="spinf-card__content">

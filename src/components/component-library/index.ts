@@ -7,3 +7,4 @@ export * from './segmented-buttons';
 export * from './slider';
 export * from './table';
 export * from './tabs';
+export * from './text-field';
